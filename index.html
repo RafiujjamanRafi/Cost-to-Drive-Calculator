@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cost to Drive Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cost to Drive Calculator (USA)</h1>
+
+    <label for="from">From:</label>
+    <input id="from" type="text" placeholder="Type city or state..." autocomplete="off">
+    <div id="fromList" class="dropdown"></div>
+
+    <label for="to">To:</label>
+    <input id="to" type="text" placeholder="Type city or state..." autocomplete="off">
+    <div id="toList" class="dropdown"></div>
+
+    <label for="mpg">Your Vehicle's Fuel Efficiency (MPG):</label>
+    <input id="mpg" type="number" placeholder="e.g., 25" />
+
+    <label for="fuelPrice">Fuel Price (USD per Gallon):</label>
+    <input id="fuelPrice" type="number" step="0.01" placeholder="e.g., 3.80" />
+
+    <button onclick="calculateCost()">Calculate Cost</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
